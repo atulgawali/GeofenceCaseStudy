@@ -37,7 +37,7 @@ The GeofenceCaseStudy App uses a data flow architecture based on **MVC** and **S
 
 ## GeofenceTracker
 
-The GeofenceTracker is a module, we can integrate in multiple app. Just we need to copy the module folder inside the new project.
+The GeofenceTracker is a module, we can integrate in multiple app. Just we need to copy the GeofenceTracker folder inside the new project.
 
 After that use the shared instance to call the fetch region function.
 
@@ -49,7 +49,7 @@ LocationEventManager is used to track the region change event.
 
  GeofenceRegion Is the struct model used to show region data.
  
- We can extent the model in realm, core-data or sqlite to persist along the app kit scenario.
+ We can extent the model in realm, core-data or sqlite to persist along the app kill scenario.
 
 ## EventLogger
 
