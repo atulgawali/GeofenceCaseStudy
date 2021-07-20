@@ -24,7 +24,7 @@
 
 The GeofenceCaseStudy App uses a data flow architecture based on **MVC** and **Singleton**.
 
-<img width="838" alt="App_Basic_Design" src="https://user-images.githubusercontent.com/9925410/126334771-97ebeeeb-1111-4ca4-977b-7a3f4db516f1.png">
+<img width="1027" alt="App_Basic_Design" src="https://user-images.githubusercontent.com/9925410/126358218-a4eeaca8-94bf-414f-a550-7fedaa0c29be.png">
 
 ## GeofenceTracker
 
