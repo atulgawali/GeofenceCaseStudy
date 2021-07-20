@@ -1,22 +1,48 @@
 # GeofenceCaseStudy
-## The clients see value in understanding space and occupancy utilisation of commercial buildings. The research shows that cohesion can leverage its mobile app to get anonymized building occupancy data. We can use access control integration with geofence triggers to better understand the entry/exist
-## The GeofenceCaseStudy app used the MVC design patter to display ui and manage flow.
+ The clients see value in understanding space and occupancy utilisation of commercial buildings. The research shows that can leverage its mobile app to get anonymized building occupancy data. We can use access control integration with geofence triggers to better understand the entry/exist.
+
+## Contents
+* [Setup](#setup)
+* [App Architecture](#app-architecture)
+* [GeofenceTracker](#app-architecture)
+* [LocationEventManager](#app-architecture)
+* [GeofenceRegion](#app-architecture)
+* [EventLogger](#app-architecture)
+
+## Setup
+
+### Get the Source
+
+1. Clone the repository:
+        $ git clone https://github.com/atulgawali/GeofenceCaseStudy
+        
+2. Use the Updated Xcode 13.0.
+
+3. Run the GeofenceCaseStudy.xcodeproj     .    
+
+## App Architecture
+
+The GeofenceCaseStudy App uses a data flow architecture based on **MVC** and **Singleton**.
+
+<img width="838" alt="App_Basic_Design" src="https://user-images.githubusercontent.com/9925410/126334771-97ebeeeb-1111-4ca4-977b-7a3f4db516f1.png">
 
 ## GeofenceTracker
-### The GeofenceTracker is a module, we can integrate in multiple app as well, Just we need to copy the folder and using shared instance we can get the region date.
-### All The required logic written inside the module, any developer can reused.
-### The GeofenceTracker Is used to track the region, Using in memory store to store the list of region.
-### The GeofenceTracker is singleton class, develop don't need to create new instance. Can use the shared instance to fetch the data.
+
+The GeofenceTracker is a module, we can integrate in multiple app. Just we need to copy the folder and using shared instance we can get the region data.
+
+All The required logic written inside the module.
 
 ## LocationEventManager 
-### LocationEventManager is used to track the location, contains region update delegate. base on that updating the model and displaying updated data on the screen.
+
+LocationEventManager is used to track the region change event.
 
 ## GeofenceRegion
-### Is the struct model used to handle data in the in memory using singleton.
-### Contains various filed id, name, lat and long etc.
+ GeofenceRegion Is the struct model used to handle data in the memory using singleton class.
+ 
+ We can use to extent to persist using realm, core-data or sqlite.
 
 ## EventLogger
-### Event logger support various type of logging, to use this class just we need to used singleton shared instance and need to cal the print funtion, base on the event type add the log.
 
-## App Design:
-<img width="838" alt="App_Basic_Design" src="https://user-images.githubusercontent.com/9925410/126334771-97ebeeeb-1111-4ca4-977b-7a3f4db516f1.png">
+ Event logger support various type of logging.
+ 
+ We can use for warning log, server log, and information log base on our requirement we just need to pass log type.
