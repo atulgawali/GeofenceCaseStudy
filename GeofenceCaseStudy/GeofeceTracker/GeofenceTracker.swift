@@ -66,6 +66,7 @@ class GeofenceTracker {
             var region = item
             if region.id == id {
                 region.isEntered = isEntered
+                EventLogger.shared.printLog(message: region.debugDescription, event: .i)
             }
             return region
         }

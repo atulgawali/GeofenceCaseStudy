@@ -15,3 +15,9 @@ struct GeofenceRegion {
     let name: String
     let radius: Int32
 }
+
+extension GeofenceRegion {
+    var debugDescription: String {
+        "\(self) Represent the GeofenceRegion with \"\(self.id)\" and is entered flag \"\(self.isEntered)\""
+    }
+}
