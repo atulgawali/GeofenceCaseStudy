@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 
 class ViewController: UIViewController {
     
@@ -17,8 +18,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         GeofenceTracker.shared.delegate = self
         regionList = GeofenceTracker.shared.getRegionList()
+
+        Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
+            AnalyticsParameterItemID: "Geofence_Case_Study_Id"
+        ])
     }
 
     override func didReceiveMemoryWarning() {

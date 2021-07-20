@@ -1,0 +1,6 @@
+framework module Pods_GeofenceCaseStudy {
+  umbrella header "Pods-GeofenceCaseStudy-umbrella.h"
+
+  export *
+  module * { export * }
+}

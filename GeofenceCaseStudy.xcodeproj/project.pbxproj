@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		326583CB918371C5E211D064 /* Pods_GeofenceCaseStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD90725EA533DE93CAC8AEA /* Pods_GeofenceCaseStudy.framework */; };
 		BB04AE3F26A6F805008481C5 /* EventLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB04AE3E26A6F805008481C5 /* EventLogger.swift */; };
 		BB04AE4226A7029F008481C5 /* Localizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB04AE4126A7029F008481C5 /* Localizations.swift */; };
+		BB04AE4426A733C8008481C5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB04AE4326A733C8008481C5 /* GoogleService-Info.plist */; };
 		BBE6D42326A6C25C001D2220 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6D42226A6C25C001D2220 /* AppDelegate.swift */; };
 		BBE6D42526A6C25C001D2220 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6D42426A6C25C001D2220 /* SceneDelegate.swift */; };
 		BBE6D42726A6C25C001D2220 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE6D42626A6C25C001D2220 /* ViewController.swift */; };
@@ -21,8 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		427A42387B1B6913C5BA4EEE /* Pods-GeofenceCaseStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceCaseStudy.debug.xcconfig"; path = "Target Support Files/Pods-GeofenceCaseStudy/Pods-GeofenceCaseStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		BB04AE3E26A6F805008481C5 /* EventLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLogger.swift; sourceTree = "<group>"; };
 		BB04AE4126A7029F008481C5 /* Localizations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizations.swift; sourceTree = "<group>"; };
+		BB04AE4326A733C8008481C5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BBE6D41F26A6C25C001D2220 /* GeofenceCaseStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeofenceCaseStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE6D42226A6C25C001D2220 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBE6D42426A6C25C001D2220 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +38,8 @@
 		BBE6D43726A6C294001D2220 /* GeofenceTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceTracker.swift; sourceTree = "<group>"; };
 		BBE6D43926A6C309001D2220 /* GeofenceRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceRegion.swift; sourceTree = "<group>"; };
 		BBE6D43C26A6C60D001D2220 /* LocationEventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEventManager.swift; sourceTree = "<group>"; };
+		DFD90725EA533DE93CAC8AEA /* Pods_GeofenceCaseStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeofenceCaseStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F90AC22449D54D67188B1981 /* Pods-GeofenceCaseStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeofenceCaseStudy.release.xcconfig"; path = "Target Support Files/Pods-GeofenceCaseStudy/Pods-GeofenceCaseStudy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,12 +47,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326583CB918371C5E211D064 /* Pods_GeofenceCaseStudy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31C6CD2A5B8C53C4048FEE7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				427A42387B1B6913C5BA4EEE /* Pods-GeofenceCaseStudy.debug.xcconfig */,
+				F90AC22449D54D67188B1981 /* Pods-GeofenceCaseStudy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A3ABB4117F563EDA917C0F6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFD90725EA533DE93CAC8AEA /* Pods_GeofenceCaseStudy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB04AE3D26A6F7F1008481C5 /* Logger */ = {
 			isa = PBXGroup;
 			children = (
@@ -66,8 +90,11 @@
 		BBE6D41626A6C25C001D2220 = {
 			isa = PBXGroup;
 			children = (
+				BB04AE4326A733C8008481C5 /* GoogleService-Info.plist */,
 				BBE6D42126A6C25C001D2220 /* GeofenceCaseStudy */,
 				BBE6D42026A6C25C001D2220 /* Products */,
+				31C6CD2A5B8C53C4048FEE7D /* Pods */,
+				A3ABB4117F563EDA917C0F6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBE6D43326A6C25E001D2220 /* Build configuration list for PBXNativeTarget "GeofenceCaseStudy" */;
 			buildPhases = (
+				19A43982A06A635C5A4EE1B2 /* [CP] Check Pods Manifest.lock */,
 				BBE6D41B26A6C25C001D2220 /* Sources */,
 				BBE6D41C26A6C25C001D2220 /* Frameworks */,
 				BBE6D41D26A6C25C001D2220 /* Resources */,
+				A72D929A31F5E7E6BD7EDA1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,7 +187,7 @@
 				};
 			};
 			buildConfigurationList = BBE6D41A26A6C25C001D2220 /* Build configuration list for PBXProject "GeofenceCaseStudy" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -181,12 +210,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBE6D42F26A6C25E001D2220 /* LaunchScreen.storyboard in Resources */,
+				BB04AE4426A733C8008481C5 /* GoogleService-Info.plist in Resources */,
 				BBE6D42C26A6C25E001D2220 /* Assets.xcassets in Resources */,
 				BBE6D42A26A6C25C001D2220 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19A43982A06A635C5A4EE1B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeofenceCaseStudy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A72D929A31F5E7E6BD7EDA1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeofenceCaseStudy/Pods-GeofenceCaseStudy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeofenceCaseStudy/Pods-GeofenceCaseStudy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeofenceCaseStudy/Pods-GeofenceCaseStudy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BBE6D41B26A6C25C001D2220 /* Sources */ = {
@@ -277,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -332,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -344,6 +416,7 @@
 		};
 		BBE6D43426A6C25E001D2220 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 427A42387B1B6913C5BA4EEE /* Pods-GeofenceCaseStudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -371,6 +444,7 @@
 		};
 		BBE6D43526A6C25E001D2220 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F90AC22449D54D67188B1981 /* Pods-GeofenceCaseStudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
