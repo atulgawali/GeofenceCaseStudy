@@ -15,5 +15,8 @@
 ### Is the struct model used to handle data in the in memory using singleton.
 ### Contains various filed id, name, lat and long etc.
 
+## EventLogger
+### Event logger support various type of logging, to use this class just we need to used singleton shared instance and need to cal the print funtion, base on the event type add the log.
+
 ## App Design:
 <img width="838" alt="App_Basic_Design" src="https://user-images.githubusercontent.com/9925410/126334771-97ebeeeb-1111-4ca4-977b-7a3f4db516f1.png">
