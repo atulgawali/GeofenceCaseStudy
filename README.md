@@ -14,3 +14,5 @@
 ## GeofenceRegion
 ### Is the struct model used to handle data in the in memory using singleton.
 ### Contains various filed id, name, lat and long etc.
+
+<img width="838" alt="App_Basic_Design" src="https://user-images.githubusercontent.com/9925410/126334771-97ebeeeb-1111-4ca4-977b-7a3f4db516f1.png">
